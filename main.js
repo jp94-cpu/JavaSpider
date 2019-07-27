@@ -14,7 +14,7 @@ console.log("working")
 
 var config = {
   images: [
-    {name: 'character', url: 'images/spider.png'}
+    {name: 'character', url: './images/spider.png'}
   ]
 }
 
