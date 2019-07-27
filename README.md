@@ -1,2 +1,2 @@
 # JavaSpider
-This is out 23 Code Street project 
+This is our 23 Code Street project 
