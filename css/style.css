@@ -1,10 +1,17 @@
-
-
+/* this is the CSS sheet */
+* { padding: 0; margin: 0; }
 
 body {
   font-family: 'Orbitron', sans-serif;
   font-size: 100%;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
+canvas {
+  border: 1px black solid;
 }
 
 h1 {
@@ -12,8 +19,7 @@ h1 {
   padding-top: 2em;
   padding-left: 1em;
 }
-h2 {
-    font-size: 2em;
+h2 {font-size: 2em;
     padding-top: 1em;
     padding-left: 1em;
   }
