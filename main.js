@@ -17,8 +17,8 @@ var config = {
 
 var state = {
   spider: {
-    xPos: 100,
-    yPos: 100,
+    xPos: 300,
+    yPos: 300,
     width: 40,
     height: 40,
   },
