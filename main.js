@@ -24,7 +24,7 @@ var state = {
   },
 
     fly: {
-      xPos: 100,
+      xPos: 150,
       yPos: 100,
       width: 30,
       height: 30,
@@ -75,8 +75,9 @@ function collision() {
      state.spider.yPos < state.fly.yPos + state.fly.height &&
      state.spider.height + state.spider.yPos > state.fly.yPos) {
      console.log("collision successful")
+     window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html"
   }
-    {window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html";}
+
 }
 
 // We check if a key is being pressed
@@ -101,23 +102,3 @@ window.addEventListener('keydown', function (event) {
       collision();
     }
 });
-
-
-
-// The code below shows the logic behind the question pop up window.
-// The pop up window will be defined by the questionPage function
-// But first we need to define the questionPageClose function as it is used by the questionPage funciton
-//
-//   function questionPageClose () {
-//   -when "next" button is pressed, the pop window closes, and the canvas is reset
-//   }
-//
-//   function questionPage () {
-//   -define window ; width, height, how it looks
-//   -logic, pick the next question on the list
-//   -if answer is correct, show "Well done" message and show "Next" button)
-//   questionPageClose();
-//   }
-
-
-// The code below shows the code for the fly image on page 2
