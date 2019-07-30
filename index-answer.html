@@ -49,6 +49,10 @@
 
         else if (questions == 0) {
             document.getElementById("score").innerHTML = "Your score was: " + score;
+            var returnButton = document.querySelector(".returnButton");
+            returnButton.innerHTML = "Return to the Web!"
+            returnButton.classList.add("buttonReappear");
+
         }
     }
 
@@ -154,7 +158,10 @@
             }
         }
       }
-
+      function playMusic(){
+        var music = new Audio('sounds/eating-SoundBible.com-1470347575.mp3');
+        music.play();
+        }
 </script>
 </head>
  <body onload="start()">
@@ -165,8 +172,27 @@ This is where the question should appear
     <button onclick="answer(1)" id="option1" class="jsAnswers"></button><br />
     <button onclick="answer(2)" id="option2" class="jsAnswers"></button><br />
     <button onclick="answer(3)" id="option3" class="jsAnswers"></button><br />
-<span id="score" class="jsScore"></span>
+<span id="score" class="jsScore"></span><br />
+<a href="index.html" onclick="playMusic()" value="sound"><button id="backToGame" class="returnButton"></button></a> <br />
+</div>
+<div class="spider">
+    <div class="spiderweb"></div>
+    <div class="body">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+    <div class="legs left">
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+    </div>
+    <div class="legs right">
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
 
+    </div>
 </div>
 </body>
 </html>
