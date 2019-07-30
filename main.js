@@ -24,8 +24,8 @@ var state = {
   },
 
     fly: {
-      xPos: 150,
-      yPos: 100,
+      xPos: Math.random()*550,
+      yPos: Math.random()*350,
       width: 30,
       height: 30,
 }
