@@ -76,6 +76,7 @@ function collision() {
      state.spider.height + state.spider.yPos > state.fly.yPos) {
      console.log("collision successful")
   }
+    {window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html";}
 }
 
 // We check if a key is being pressed
@@ -104,7 +105,7 @@ window.addEventListener('keydown', function (event) {
 
 
 // The code below shows the logic behind the question pop up window.
-// The pop up window will be defined by the questionPage functionName
+// The pop up window will be defined by the questionPage function
 // But first we need to define the questionPageClose function as it is used by the questionPage funciton
 //
 //   function questionPageClose () {
@@ -118,14 +119,5 @@ window.addEventListener('keydown', function (event) {
 //   questionPageClose();
 //   }
 
-
-  // Collision detector below. Prior to it we need to define the spider and fly objects
-  // function spiderMeetsFly () {
-  // if (spider.x + spider.width >= fly.x &&
-  // spider.x<=fly.x+fly.width &&
-  // spider.y+spider.height>= fly.y &&
-  // spider.y <= fly.y+fly.height);
-  // {questionPage()}
-//}
 
 // The code below shows the code for the fly image on page 2
