@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+<title>Beginner Javascript Questions</title>
+<script type="text/javascript">
+    var score = 0;
+    var questions = 5;
+
+    function start() {
+      console.log("Start", questions)
+        if (questions == 5) {
+            document.getElementById("question").innerHTML = "What is Javascript's purpose as a language?";
+            document.getElementById("option1").innerHTML = "Defines the content of web pages";
+            document.getElementById("option2").innerHTML = "Defines the behaviour of web pages";
+            document.getElementById("option3").innerHTML = "Specify the layout of web pages";
+        }
+
+        else if (questions == 4) {
+            document.getElementById("question").innerHTML = "Where should you place your Javascript code in HTML?";
+            document.getElementById("option1").innerHTML = "Between the script tags";
+            document.getElementById("option2").innerHTML = "In the header";
+            document.getElementById("option3").innerHTML = "In the nav bar";
+        }
+
+        else if (questions == 3) {
+            document.getElementById("question").innerHTML = "What is a Javascript function?";
+            document.getElementById("option1").innerHTML = "A block of Javascript code, that can be executed when called for";
+            document.getElementById("option2").innerHTML = "A block of Javascript code that can only be executed in a separate Javascript file";
+            document.getElementById("option3").innerHTML = "A block of Javascript code that automatically executes once written";
+        }
+
+        else if (questions == 2) {
+            document.getElementById("question").innerHTML = "How do you call a Javascript function?";
+            document.getElementById("option1").innerHTML = "var function() {}";
+            document.getElementById("option2").innerHTML = "function(){};";
+            document.getElementById("option3").innerHTML = "function{()};";
+        }
+
+        else if (questions == 1) {
+            document.getElementById("question").innerHTML = "How do you separate Javascript statements";
+            document.getElementById("option1").innerHTML = "Comma";
+            document.getElementById("option2").innerHTML = "Separate line";
+            document.getElementById("option3").innerHTML = "Semi colon";
+        }
+
+        else if (questions == 0) {
+            document.getElementById("score").innerHTML = "Your score was: " + score;
+        }
+    }
+
+    function answer(question) {
+      console.log("answer", question)
+        if (questions == 5) {
+            if (question == 1) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 2) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 3) {
+                score++;
+                questions--;
+                start();
+            }
+        }
+
+        else if (questions == 4) {
+            if (question == 1) {
+                score++;
+                questions--;
+                start();
+            }
+
+            else if (question == 2) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 3) {
+                score = score;
+                questions--;
+                start();
+            }
+        }
+
+        else if (questions == 3) {
+            if (question == 1) {
+                score++;
+                questions--;
+                start();
+            }
+
+            else if (question == 2) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 3) {
+                score = score;
+                questions--;
+                start();
+            }
+        }
+
+        else if (questions == 2) {
+            if (question == 1) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 2) {
+                score++;
+                questions--;
+                start();
+            }
+
+            else if (question == 3) {
+                score = score;
+                questions--;
+                start();
+            }
+        }
+
+        else if (questions == 1) {
+            if (question == 1) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 2) {
+                score = score;
+                questions--;
+                start();
+            }
+
+            else if (question == 3) {
+                score++;
+                questions--;
+                start();
+            }
+        }
+      }
+
+</script>
+</head>
+ <body onload="start()">
+ <div>
+<span id="question" class="jsQuestions">
+This is where the question should appear
+    </span><br />
+    <button onclick="answer(1)" id="option1" class="jsAnswers"></button><br />
+    <button onclick="answer(2)" id="option2" class="jsAnswers"></button><br />
+    <button onclick="answer(3)" id="option3" class="jsAnswers"></button><br />
+<span id="score" class="jsScore"></span>
+
+</div>
+</body>
+</html>
