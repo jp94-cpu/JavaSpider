@@ -17,8 +17,8 @@ var config = {
 
 var state = {
   spider: {
-    xPos: 100,
-    yPos: 100,
+    xPos: 300,
+    yPos: 300,
     width: 40,
     height: 40,
   },
@@ -75,8 +75,9 @@ function collision() {
      state.spider.yPos < state.fly.yPos + state.fly.height &&
      state.spider.height + state.spider.yPos > state.fly.yPos) {
      console.log("collision successful")
+     window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html";
   }
-    {window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html";}
+
 }
 
 // We check if a key is being pressed
