@@ -59,10 +59,6 @@ span.jsScore {
 
 #hiddenReading {
   display: none;
-}
-
-div.furtherReading {
-  display: flex;
   font-size: 1em;
   font-family: sans-serif;
   padding: 14px 20px;
@@ -223,6 +219,8 @@ button:hover {
   margin: 10px;
 }
 
+
+
 button.resourceButton{
   display: flex;
   font-size: 1.5em;
@@ -231,6 +229,8 @@ button.resourceButton{
   text-shadow: 2px 2px rgba(0,0,0,0.40);
   padding: 14px 20px;
   border: 1px solid;
+  border-radius: 25px;
+  border-style: outset;
   margin: 10px;
 }
 

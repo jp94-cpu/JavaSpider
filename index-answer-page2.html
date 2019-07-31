@@ -10,6 +10,8 @@
     var score = 0;
     var questions = 5;
 
+//Questions
+
     function start() {
       console.log("Start", questions)
         if (questions == 5) {
@@ -55,6 +57,8 @@
 
         }
     }
+
+//Answers
 
     function answer(question) {
       console.log("answer", question)
@@ -159,23 +163,23 @@
         }
       }
 
-      function resourceFunction() {
-var x = document.getElementById("hiddenReading");
-if (x.style.display === "none") {
-  x.style.display = "none";
-} else {
-  x.style.display = "block";
-};
-if (x.style.display === "block") {
-  x.style.display = "block";
-} else {
-  x.style.display = "none";
-};
+//Resource button
+
+function resourceFunction() {
+  var x = document.getElementById("hiddenReading");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
 }
-      // function playMusic(){
-      //   var music = document.getElementbyId("audio");
-      //   music.play();
-      //   }
+
+      function playMusic(){
+        var music = document.getElementbyId("sounds/eating-SoundBible.com-1470347575.mp3");
+        music.play();
+      }
+
+
 </script>
 </head>
  <body onload="start()">
@@ -191,13 +195,13 @@ This is where the question should appear
 <span id="score" class="jsScore"></span><br />
 
 <!-- Wider reading resources (hidden content) -->
-<button onclick="resourceFunction()" class="resourceButton">Further Reading</button>
+<button onclick="resourceFunction()" class="resourceButton">Double click for further resources</button>
 
-<div id="hiddenReading"  class="furtherReading">
+<div id="hiddenReading" class="furtherReading">
 For even more information on the basics of Javascript, visit ......</div>
 
 <!-- Back to game button -->
-<a href="index.html"><button id="backToGame" class="returnButton"></button></a> <br />
+<a href="index.html"><button id="backToGame" class="returnButton" onclick="playMusic()"></button></a> <br />
 </div>
 
 <!-- Spider animation -->
