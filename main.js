@@ -28,7 +28,8 @@ var state = {
       yPos: 100,
       width: 30,
       height: 30,
-}
+},
+game:{collision:false}
   };
 
   //CALLING BACKGROUND IMAGE
@@ -70,13 +71,24 @@ setInterval(animate, 40);
 
 //The function that detects the collision between the spider and the fly
 function collision() {
+  if(state.game.collision){
   if (state.spider.xPos < state.fly.xPos + state.fly.width &&
      state.spider.xPos + state.spider.width > state.fly.xPos &&
      state.spider.yPos < state.fly.yPos + state.fly.height &&
      state.spider.height + state.spider.yPos > state.fly.yPos) {
      console.log("collision successful")
+     window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer-page2.html"
+  }
+  else {
+  if (state.spider.xPos < state.fly.xPos + state.fly.width &&
+     state.spider.xPos + state.spider.width > state.fly.xPos &&
+     state.spider.yPos < state.fly.yPos + state.fly.height &&
+     state.spider.height + state.spider.yPos > state.fly.yPos) {
+     console.log("collision successful")
+     state.game.collision = true;
      window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html"
   }
+}
 
 }
 
