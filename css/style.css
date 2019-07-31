@@ -2,9 +2,9 @@
 * { padding: 0; margin: 0; }
 
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif
   font-size: 100%;
-  
+
 }
 
 canvas {
@@ -18,22 +18,99 @@ canvas {
 }
 
 h1 {
-    font-size: 2.5em;
-    padding-top: 2em;
-    padding-left: 1em;
-    color: red;
+  font-family: 'Orbitron';
+  font-size: 3em;
+  padding-top: 2em;
+  padding-left: 2em;
+  color: red;
   }
-h2 {font-size: 2em;
-    padding-top: 1em;
-    padding-left: 1em;
+
+h2 {
+  font-family: 'Orbitron';
+  font-size: 2.5em;
+  padding-top: 1em;
+  padding-left: 2em;
   }
+  /*opening instructions*/
+.how{
+  font-family: 'Orbitron';
+  font-size: 1.5em;
+  padding: .5em;
+  text-align: center;
+}
+
+.instructions {
+  font-family: 'Orbitron';
+  line-height: 1.5;
+  width: 400px;
+  border: 3px solid #FF0000;
+  border-radius: 15px;
+  margin-left: 15em;
+  margin-top: 8em;
+  bottom: 4em;
+  padding: 1em;
+}
+
+/*opening page start button*/
+.button  {
+  font-family: 'Orbitron';
+  position: fixed;
+  bottom: 6em;
+  right: 4em;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+ }
+
+.button:hover {
+  background-color:  #ff3333
+  }
+
+ .button:active {
+   background-color:  #ff3333;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+
+h3 {
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding left: 1em;
+}
+
+span.jsQuestions {
+  display: flex;
+  font-family: 'Orbitron';
+  font-size: 1.5em;
+  margin: 10px;
+  border: 1px solid;
+  padding: 20px;
+}
+
+span.jsScore {
+  display: flex;
+  font-family: 'Orbitron';
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 20px;
+  color: red;
+}
+
   .spider {
     position: absolute;
     display: inline-block;
     top: 0;
     left: 80%;
 
-    /* 4. Animatie*/
+    /* 4. Animate*/
     animation: swing 2s infinite;
     transform-origin: top;
 
@@ -43,7 +120,7 @@ h2 {font-size: 2em;
 
 .spider .spiderweb {
     width: 2px;
-    height: 20em;
+    height: 25em;
     margin-left: 49px;
     background: #000;
 }
@@ -82,7 +159,7 @@ h2 {font-size: 2em;
     margin: 55%;
     border-radius: 50%;
 
-    /* 3. Animatie */
+    /* 3. Animate */
     animation: look 8s infinite;
 }
 .mouth
@@ -152,6 +229,20 @@ h2 {font-size: 2em;
     margin-left: -30px;
 }
 
+/* Buttons */
+
+button.jsAnswers {
+  display: flex;
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 14px 20px;
+  border: 1px solid;
+  margin: 10px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 /* 1. Animatie */
@@ -166,7 +257,7 @@ h2 {font-size: 2em;
 }
 
 
-/* 3. Animatie */
+/* 3. Animate */
 @keyframes swing {
     0%, 100% {
         transform: translateY(0);
