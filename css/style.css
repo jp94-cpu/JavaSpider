@@ -57,6 +57,19 @@ span.jsScore {
   color: red;
 }
 
+#hiddenReading {
+  display: none;
+}
+
+section.furtherReading {
+  display: flex;
+  font-size: 1em;
+  font-family: sans-serif;
+  padding: 14px 20px;
+  border: 1px solid;
+  margin: 10px;
+}
+
   .spider {
     position: absolute;
     display: inline-block;
@@ -210,6 +223,35 @@ button:hover {
   margin: 10px;
 }
 
+/* media query */
+
+@media screen and (max-width: 700px){
+
+  .spider {
+    display:none;
+  }
+
+  span.jsQuestions {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  span.jsScore {
+    font-size: 2em;
+  }
+
+  button.jsAnswers {
+    display: block;
+    width: 96.5%;
+      text-align: center;
+    font-size: 1.5em;
+
+  }
+
+  .buttonReappear{
+    font-size: 1.5em;
+  }
+}
 
 /* 1. Animatie */
 @keyframes look {
