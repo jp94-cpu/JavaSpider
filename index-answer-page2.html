@@ -158,6 +158,20 @@
             }
         }
       }
+
+      function resourceFunction() {
+var x = document.getElementById("hiddenReading");
+if (x.style.display === "none") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+};
+if (x.style.display === "block") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+};
+}
       // function playMusic(){
       //   var music = document.getElementbyId("audio");
       //   music.play();
@@ -173,16 +187,20 @@ This is where the question should appear
     <button onclick="answer(2)" id="option2" class="jsAnswers"></button><br />
     <button onclick="answer(3)" id="option3" class="jsAnswers"></button><br />
 
+<!-- Score display -->
 <span id="score" class="jsScore"></span><br />
 
-<section id="hiddenReading" class="furtherReading">
-  <p>Further Reading <br />
-  For even more information on the basics of Javascript, visit ......</p>
-</section>
+<!-- Wider reading resources (hidden content) -->
+<button onclick="resourceFunction()" class="resourceButton">Further Reading</button>
 
+<div id="hiddenReading"  class="furtherReading">
+For even more information on the basics of Javascript, visit ......</div>
+
+<!-- Back to game button -->
 <a href="index.html"><button id="backToGame" class="returnButton"></button></a> <br />
 </div>
 
+<!-- Spider animation -->
 <div class="spider">
     <div class="spiderweb"></div>
     <div class="body">

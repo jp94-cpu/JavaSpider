@@ -61,7 +61,7 @@ span.jsScore {
   display: none;
 }
 
-section.furtherReading {
+div.furtherReading {
   display: flex;
   font-size: 1em;
   font-family: sans-serif;
@@ -218,6 +218,17 @@ button:hover {
   display: flex;
   font-size: 1em;
   font-family: sans-serif;
+  padding: 14px 20px;
+  border: 1px solid;
+  margin: 10px;
+}
+
+button.resourceButton{
+  display: flex;
+  font-size: 1.5em;
+  font-family: 'Orbitron';
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0,0,0,0.40);
   padding: 14px 20px;
   border: 1px solid;
   margin: 10px;
