@@ -26,9 +26,12 @@ var state = {
     fly: {
       xPos: 100,
       yPos: 100,
+      xPos: Math.random()*550,
+      yPos: Math.random()*350,
       width: 30,
       height: 30,
 },
+
 game:{collision:false}
   };
 
@@ -71,26 +74,28 @@ setInterval(animate, 40);
 
 //The function that detects the collision between the spider and the fly
 function collision() {
-  if(state.game.collision){
+
+       if(state.game.collision){
   if (state.spider.xPos < state.fly.xPos + state.fly.width &&
      state.spider.xPos + state.spider.width > state.fly.xPos &&
      state.spider.yPos < state.fly.yPos + state.fly.height &&
      state.spider.height + state.spider.yPos > state.fly.yPos) {
-     console.log("collision successful")
-     window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer-page2.html"
-  }
+     console.log("collision2 successful")
+     window.location.href = "index-answer-page2.html";
+   }}
   else {
   if (state.spider.xPos < state.fly.xPos + state.fly.width &&
      state.spider.xPos + state.spider.width > state.fly.xPos &&
      state.spider.yPos < state.fly.yPos + state.fly.height &&
      state.spider.height + state.spider.yPos > state.fly.yPos) {
-     console.log("collision successful")
+     console.log("collision1 successful");
      state.game.collision = true;
-     window.location.href = "https://jp94-cpu.github.io/JavaSpider/index-answer.html"
+     console.log(state.game.collision);
+     window.location.href = "index-answer.html";
   }
-}
 
-}
+
+}}
 
 // We check if a key is being pressed
 window.addEventListener('keydown', function (event) {
