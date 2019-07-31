@@ -13,6 +13,16 @@
    <h1> Attention Player</h1>
    <h2 id="elementToEdit"></h2>
 
+   <!--Instructions-->
+   <section class="instructions">
+     <h3 class="how">HOW TO PLAY</h3>
+   <p>
+     Using the arrow keys move Java Spider
+     around the spider web to catch the flies.
+     When Java Spider catches a fly you take a quiz on JavaScript.
+     </p>
+   </section>
+
    <div class="spider">
        <div class="spiderweb"></div>
        <div class="body">
@@ -33,22 +43,23 @@
        </div>
    </div>
 
+   <!-- start game button-->
+  <a class="button" href="index.html">Catch the Flies</a>
 
 
- <script>
-  var i = 0;
-  var txt = 'Java Spider needs your help catching flies';
-  var speed = 50;
-  function typeWriter() {
-  if (i < txt.length) {
-  document.getElementById("elementToEdit").innerHTML += txt.charAt(i);
-  i++;
-  setTimeout(typeWriter, speed);
-  }
+  <script>
+   var i = 0;
+   var txt = 'Java Spider needs your help catching flies';
+   var speed = 50;
+   function typeWriter() {
+   if (i < txt.length) {
+   document.getElementById("elementToEdit").innerHTML += txt.charAt(i);
+   i++;
+   setTimeout(typeWriter, speed);
+   }
   }
   onload = typeWriter();
-
-  </script>
+ </script>
 
  </body>
 </html>
