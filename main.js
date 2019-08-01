@@ -32,7 +32,7 @@ var state = {
       height: 30,
 },
 
-game:{collision:false},
+game:{collision:false}
   };
 
   //CALLING BACKGROUND IMAGE
@@ -66,7 +66,6 @@ function animate(){
    drawBackground();
    drawspider();
    drawFly();
-   drawScore();
 }
 
 //We call the animate() function and set a drawing interval for it to run every 40 milliseconds
@@ -83,7 +82,6 @@ function collision() {
      state.spider.height + state.spider.yPos > state.fly.yPos) {
      console.log("collision2 successful")
      window.location.href = "index-answer-page2.html";
-     score++;
    }}
   else {
   if (state.spider.xPos < state.fly.xPos + state.fly.width &&
@@ -94,9 +92,8 @@ function collision() {
      state.game.collision = true;
      console.log(state.game.collision);
      window.location.href = "index-answer.html";
-      score++;
   }
-  drawScore();
+
 
 }}
 
@@ -122,16 +119,6 @@ window.addEventListener('keydown', function (event) {
       collision();
     }
 });
-
-var score = 0;
-
-function drawScore() {
-  ctx.font = "20px Arial";
-  ctx.fillStyle = "red";
-  ctx.fillText ("Score: "+score, 8, 20);
-
-}
-
 
 
 
