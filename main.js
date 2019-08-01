@@ -37,6 +37,15 @@ game: {
 },
   };
 
+  // eating sound
+
+  function playMusic(){
+    var music = new Audio('sounds/eating-SoundBible.com-1470347575.mp3');
+    console.log("playing audio");
+    music.play();
+    }
+
+
   //CALLING BACKGROUND IMAGE
   // var background = new Image();
   // background.src = "./images/web.png";
@@ -48,14 +57,15 @@ game: {
   function drawBackground(){
     var background = document.querySelector("#web");
    ctx.drawImage(background,0,0);
-
   }
+
 
   //Defining the spider - the #spider id is specified within the HTML
   function drawspider() {
     var spider = document.querySelector("#spider");
     ctx.drawImage(spider, state.spider.xPos, state.spider.yPos, state.spider.width, state.spider.height)
   }
+
 
   //Defining the fly - the #web id is specified within the HTML
 function drawFly() {
@@ -74,6 +84,8 @@ function animate(){
 //We call the animate() function and set a drawing interval for it to run every 40 milliseconds
 animate();
 setInterval(animate, 40);
+playMusic();
+
 
 //The function that detects the collision between the spider and the fly
 function collision() {
