@@ -272,8 +272,7 @@ button:hover {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  margin: 10px;
-  margin-bottom: 10px;
+  margin: 20px 20px;
 }
 
 
@@ -294,8 +293,47 @@ button.resourceButton{
 
 @media screen and (max-width: 700px){
 
+  h1 {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .spider {
     display:none;
+  }
+
+  .how {
+  font-family: 'Orbitron';
+  font-size: 1.5em;
+  text-align: center;
+  }
+
+  .instructions {
+  display: block;
+  font-size: 1.5em;
+  margin: 20px 20px;
+  padding-left: 1em;
+  text-align: center;
+  width: auto;
+
+  }
+
+  .button {
+    display: block;
+    position: relative;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    left: 1px;
+    margin: 30px 20px;
+    padding: 20px;
   }
 
   span.jsQuestions {
@@ -312,12 +350,24 @@ button.resourceButton{
     width: 96.5%;
       text-align: center;
     font-size: 1.5em;
+  }
 
+  button.resourceButton{
+    display: block;
+    width: 96.5%;
+      text-align: center;
+    font-size: 1.5em;
   }
 
   .buttonReappear{
     display: block;
+    position: relative;
     width: 96.5%;
+    bottom: 10px;
+    right: 10px;
+    left: 1px;
+    margin: 30px 10px;
+    padding: 20px;
     text-align: center;
     font-size: 1.5em;
 
